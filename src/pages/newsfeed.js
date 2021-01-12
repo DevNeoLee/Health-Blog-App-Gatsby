@@ -26,7 +26,7 @@ const NewsFeedPage = () => {
   return (<Layout>
     <SEO title="건강뉴스 모음" />
     <h1>건강뉴스 모음</h1>
-    <ol>
+    <ul className="infolist">
       { data.allMarkdownRemark.edges.map(({node}) => {
         return (
           <li key={node.fields.slug}>
@@ -39,7 +39,7 @@ const NewsFeedPage = () => {
           </li>
         )
       }) }
-    </ol>
+    </ul>
     <p>메이저 중요한 건강뉴스들을 모았습니다.</p>
   </Layout>)
 }
