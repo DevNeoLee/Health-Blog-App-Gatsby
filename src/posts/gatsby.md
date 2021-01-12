@@ -16,5 +16,4 @@ date: '2020-12-30'
 
 [ 구글 홈 가기](https://www.google.com)
 
-![우주여행사 사진.](./gatsby-astronaut.png)
 ![lunchbox photo.](./main_pic1.jpg)

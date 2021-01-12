@@ -31,8 +31,10 @@ const NewsFeedPage = () => {
         return (
           <li key={node.fields.slug}>
             <Link to={`/newsfeed/${node.fields.slug}`} >
-              <h2>{node.frontmatter.title}</h2>
-              <p> {node.frontmatter.date}</p>
+              <span>{node.frontmatter.title}</span>
+            </Link>
+            <Link to={`/newsfeed/${node.fields.slug}`} >
+              <span> {node.frontmatter.date}</span>
             </Link>
           </li>
         )
