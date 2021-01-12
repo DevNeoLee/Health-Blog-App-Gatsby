@@ -4,9 +4,10 @@ html {
   font: 112.5%/1.45em georgia, serif, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  padding: 0;
+  margin: 0;
 }
 body {
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
@@ -18,6 +19,8 @@ body {
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   font-feature-settings: "kern", "liga", "clig", "calt";
+  padding: 0;
+  margin: 0;
 }
 article,
 aside,
@@ -32,6 +35,7 @@ nav,
 section,
 summary {
   display: block;
+  margin: 0;
 }
 audio,
 canvas,
@@ -95,7 +99,7 @@ mark {
 small {
   font-size: 80%;
 }
-sub,
+/* sub,
 sup {
   font-size: 75%;
   line-height: 0;
@@ -107,7 +111,7 @@ sub {
 }
 sup {
   top: -0.5em;
-}
+} */
 img {
   border-style: none;
   max-width: 100%;
@@ -594,4 +598,31 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+
+main {
+  background-color: lightcyan;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body, html, footer {
+  margin: 0;
+  padding: 0;
+}
+
+React.Fragment {
+  margin: 0;
+  padding: 0;
+  background-color: blue;
+}
+
+footer {
+  min-height: 300px;
+}
+
+.infolist {
+  list-style-type: none;
+  background-color:  cornflowerblue;
 }
