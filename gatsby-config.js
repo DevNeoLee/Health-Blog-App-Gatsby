@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/reponame",
   siteMetadata: {
     title: `건강매거진`,
     description: `건강매거진 구독해 주세요`,
