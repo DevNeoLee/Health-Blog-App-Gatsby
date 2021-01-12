@@ -32,7 +32,7 @@ const Header = ({ siteTitle} ) => (
     </div>
     <nav>
       <ul className={headerStyles.ul}>
-        <Link to='/newsfeed'><li>건강뉴스 </li></Link>
+        <Link to='/newsfeedpage'><li>건강뉴스 </li></Link>
         <Link to="/infofeed"><li>건강정보 </li></Link>
         <Link to="/foodfeed"><li>질병별 권장식품</li></Link>
       </ul>

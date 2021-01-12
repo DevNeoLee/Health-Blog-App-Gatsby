@@ -601,7 +601,7 @@ pre tt:after {
 }
 
 main {
-  background-color: lightcyan;
+  /* background-color: lightcyan; */
   margin: 0;
   padding: 0;
   min-height: 100vh;
@@ -612,17 +612,22 @@ body, html, footer {
   padding: 0;
 }
 
-React.Fragment {
-  margin: 0;
-  padding: 0;
-  background-color: blue;
-}
-
 footer {
   min-height: 300px;
 }
 
 .infolist {
   list-style-type: none;
-  background-color:  cornflowerblue;
+}
+
+.post {
+  font-size: 1.6rem;
+  background-color: cornsilk;
+  padding: 1.5rem;
+  /* height: 5rem; */
+}
+
+.post:hover {
+  background-color: darkkhaki;
+  color: white;
 }

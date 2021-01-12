@@ -6,7 +6,7 @@ import Image from "../components/image"
 import SEO from "../components/seo"
 import indexStyles from './index.module.scss'
 
-import NewsFeedPage from "./newsfeed"
+import NewsFeed from "../components/newsfeed"
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +25,7 @@ const IndexPage = () => (
       </ul>
     </div>
     <div>
-     < NewsFeedPage />
+     < NewsFeed />
     </div>
     <div>
       <h2>질병별 권장식품 정보 모음</h2>
