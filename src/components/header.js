@@ -1,11 +1,12 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import headerStyles from './header.module.scss'
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle} ) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: '#0ee4dd',
       marginBottom: `1.45rem`,
     }}
   >
@@ -16,18 +17,26 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
+       <Link
           to="/"
           style={{
             color: `white`,
             textDecoration: `none`,
+            textAlign: 'center',
           }}
         >
-          {siteTitle}
-        </Link>
-      </h1>
+      <h1 style={{ margin: 0, fontSize: '50px' }}>{ siteTitle } </h1></Link>
+ 
+     
+       
     </div>
+    <nav>
+      <ul className={headerStyles.ul}>
+        <Link to='/newsfeed'><li>건강뉴스 </li></Link>
+        <Link to="/infofeed"><li>건강정보 </li></Link>
+        <Link to="/foodfeed"><li>질병별 권장식품</li></Link>
+      </ul>
+    </nav>
   </header>
 )
 
