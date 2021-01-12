@@ -19,7 +19,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <React.Fragment className="fragment">
+    <React.Fragment>
       <Header prop={'hello'} siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{

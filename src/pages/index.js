@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import indexStyles from './index.module.scss'
 
 import NewsFeed from "../components/newsfeed"
+import InfoFeed from "../components/infofeed"
 
 const IndexPage = () => (
   <Layout>
@@ -15,25 +16,15 @@ const IndexPage = () => (
       <Image />
     </div>
     <div>
-      <h2 className={indexStyles.aquamarine}>건강 기사들</h2>
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
-    </div>
-    <div>
      < NewsFeed />
     </div>
     <div>
-      <h2>질병별 권장식품 정보 모음</h2>
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
+     < InfoFeed />
     </div>
-
+    <div>
+      <h2>질병별 권장식품 정보 모음</h2>
+ 
+    </div>
   </Layout>
 )
 
