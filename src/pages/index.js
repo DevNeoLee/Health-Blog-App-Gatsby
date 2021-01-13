@@ -23,7 +23,6 @@ const IndexPage = () => (
     </div>
     <div>
       <h2>질병별 권장식품 정보 모음</h2>
- 
     </div>
   </Layout>
 )
