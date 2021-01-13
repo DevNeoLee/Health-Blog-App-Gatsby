@@ -1,11 +1,17 @@
 module.exports = {
-  pathPrefix: "/reponame",
   siteMetadata: {
     title: `건강매거진`,
     description: `건강매거진 구독해 주세요`,
     author: `@gatsbyjs`,
   },
   plugins: [
+     {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,7 +21,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,8 +34,22 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, 
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-transformer-remark',
-    'gatsby-image'
+    `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-remark-relative-images',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 750,
+              linkImagesToOriginal: false 
+            }
+          }
+        ]
+      }
+    },
+    'gatsby-image',
   ],
 }
