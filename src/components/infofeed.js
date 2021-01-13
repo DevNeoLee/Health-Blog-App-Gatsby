@@ -16,7 +16,7 @@ const InfoFeed = () => {
         slug
             contentful_id
         body {
-            raw
+            json
         }
         }
     }
